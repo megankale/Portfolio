@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>Meg Kale</h1>
+<div class="left">
+  <ul>
+    <% for (var i =0; i<data.length; i++) {%>
+      <li><a href=<%= "/posts/"+data[i].id%>><%= data[i].title %></a></li>
+    <% }%>
+  </ul>
+</div>
+
+  <form action="/posts" method="POST">
+    <br>
+    <label>Penny for your thoughts? <br></label><br>
+    <input type="text" id="title" placeholder="title">
+    <br><br>
+    <textarea class="scrollabletextbox" placeholder="da body"></textarea>
+    <br>
+    <br>
+    <input type="submit" name="submit" placeholder="submit">
+  </form>
+</body>
+</html>
