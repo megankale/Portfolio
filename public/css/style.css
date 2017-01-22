@@ -13,20 +13,23 @@ body{
   font-family: 'Roboto Slab', serif;
   text-align: center;
   color:black;
-  opacity:0.6;
 }
 h1{
   font-family: 'Julius Sans One', sans-serif;
-  padding-top: 20px;
   font-size: 50px;
   padding-bottom: 15px;
   border-bottom: 1px solid #999;
   color:black;
+  opacity: 0.6;
 }
-
+h2{
+  opacity: 0.6;
+}
 a{
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  padding-right: 15px
 
 }
 ul{
@@ -41,6 +44,7 @@ li{
   list-style-type: none;
   line-height: 40px;
   font-size: 20px;
+  opacity: 0.6;
 
 }
 div.left {
@@ -53,14 +57,6 @@ div.left {
     padding-right:15px;
 }
 
-div.right {
-
-    width: 80%;
-    height: 100%;
-    border-left: 2px solid #999;
-    padding-left:15px;
-    overflow: scroll;
-}
 div{
 display: inline-block;
 float: left;
@@ -69,6 +65,7 @@ float: left;
 input {
   display: inline-block;
   width: 300px;
+  opacity: 0.6;
 }
 
 .scrollabletextbox {
@@ -77,19 +74,37 @@ width:300px;
 font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
 font-size: 82%;
 overflow:scroll;
+opacity: 0.6;
 }
 
 .border {
-  border-color: #446040;
+  border-color: #585858;
   border-width: 3px;
   border-style: solid;
   border-radius: 100%;
 }
 .resize{
-  width: 250px;
+  width: 200px;
 }
 .center{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.opacity{
+  opacity: 0.6;
+}
+
+.nav li{
+  font-size: 4 px;
+  list-style-type: none;
+  display: inline;
+}
+.nav{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3px;
+  list-style-type: none;
+  float: left;
+  clear: left;
 }
