@@ -50,6 +50,13 @@ app.get('/posts/:id', function(req, res){
   })
 })
 
+app.get('/portfolio', function(req,res){
+  pg.connect(dbURL, function(err,client, done){
+    res.render('portfolio/portfolio');
+    pg.end();
+  })
+})
+
 app.listen(3000, function(){
   console.log("Listening on port 3000");
 })
